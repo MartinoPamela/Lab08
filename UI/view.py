@@ -43,7 +43,6 @@ class View(ft.UserControl):
 
         self._ddNerc = ft.Dropdown(label="Select NERC")
 
-
         self._txtYears = ft.TextField(label="Insert max years")
         self._txtHours = ft.TextField(label="Insert max hours")
         self._btnWorstCase = ft.ElevatedButton(text="Worst-Case analysis", on_click=self._controller.handleWorstCase)
@@ -56,7 +55,7 @@ class View(ft.UserControl):
 
         self._controller.fillDD()
 
-        #TextOutput
+        # TextOutput
         self._txtOut = ft.ListView(expand=1, spacing=10, padding=20, auto_scroll=False)
 
         self._page.add(self._txtOut)
